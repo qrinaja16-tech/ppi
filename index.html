@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedang Diperbarui — PPI Kabupaten Probolinggo</title>
+
+    <!-- Tipografi Editorial & Civic Branding: Plus Jakarta Sans, Playfair Display, Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        mono: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        ivory: '#FAF7F2',
+                        ivoryCard: '#FFFDF9',
+                        crimsonDeep: '#2A0810',
+                        crimsonMid: '#581120',
+                        crimsonAccent: '#8E1B32',
+                        goldThin: '#C8A45D',
+                        goldSoft: '#E5CFA0',
+                        inkDark: '#191415',
+                        inkMuted: '#5C5255',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Latar belakang gradien editorial: crimson gelap elegan berpadu putih gading hangat */
+        .editorial-bg {
+            background:
+                radial-gradient(circle at 12% 18%, rgba(142, 27, 50, 0.22) 0%, transparent 45%),
+                radial-gradient(circle at 88% 82%, rgba(42, 8, 16, 0.14) 0%, transparent 48%),
+                linear-gradient(135deg, #FAF7F2 0%, #F5EFE6 52%, #EFE6D8 100%);
+        }
+
+        /* Panel kanan beraksen crimson gelap dengan tekstur halus */
+        .crimson-panel {
+            background: linear-gradient(160deg, #3A0B16 0%, #24060D 60%, #170408 100%);
+        }
+
+        /* Kartu kaca buram halus */
+        .glass-card {
+            background: rgba(255, 253, 249, 0.84);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        /* Animasi garis indikator berjalan halus */
+        @keyframes subtleSlide {
+            0% { transform: translateX(-25%); }
+            50% { transform: translateX(15%); }
+            100% { transform: translateX(-25%); }
+        }
+
+        .progress-glide {
+            animation: subtleSlide 4.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="editorial-bg text-inkDark font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-crimsonAccent selection:text-ivory">
+
+    <!-- Garis Aksen Emas Halus di Bagian Paling Atas -->
+    <div class="w-full h-[2px] bg-gradient-to-r from-crimsonDeep via-goldThin to-crimsonDeep opacity-85"></div>
+
+    <!-- Header Minimalis Editorial -->
+    <header class="w-full max-w-6xl mx-auto px-5 sm:px-8 pt-6 sm:pt-8">
+        <div class="flex items-center justify-between gap-4 pb-5 border-b border-inkDark/10">
+            <div class="flex items-center gap-3.5">
+                <!-- Emblem Geometris Bersih -->
+                <div class="w-10 h-10 rounded-full border border-goldThin/70 bg-crimsonDeep text-goldSoft flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <polygon points="12 2 19 6.5 19 17.5 12 22 5 17.5 5 6.5 12 2"></polygon>
+                        <circle cx="12" cy="12" r="2.5" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-inkMuted">
+                        Purna Paskibraka Indonesia
+                    </p>
+                    <p class="font-semibold text-sm sm:text-base text-inkDark tracking-tight">
+                        Pengurus Kabupaten Probolinggo
+                    </p>
+                </div>
+            </div>
+
+            <span class="hidden sm:inline-block font-mono text-xs tracking-[0.16em] uppercase text-inkMuted">
+                Portal Resmi Organisasi
+            </span>
+        </div>
+    </header>
+
+    <!-- Konten Utama: Tata Letak Asimetris Editorial -->
+    <main class="flex-grow flex items-center w-full max-w-6xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
+        <div class="w-full glass-card rounded-2xl border border-inkDark/10 shadow-[0_24px_60px_-15px_rgba(42,8,16,0.12)] overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+
+            <!-- Kolom Kiri (7/12): Tipografi Utama, Pesan, & Kanal Kontak -->
+            <div class="lg:col-span-7 p-6 sm:p-10 md:p-12 flex flex-col justify-between">
+                <div>
+                    <!-- Badge SEDANG DALAM PERBAIKAN -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-goldThin/60 bg-goldThin/10 mb-6">
+                        <span class="w-1.5 h-1.5 rounded-full bg-crimsonAccent"></span>
+                        <span class="font-mono text-[11px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-crimsonDeep">
+                            SEDANG DALAM PERBAIKAN
+                        </span>
+                    </div>
+
+                    <!-- Judul Utama -->
+                    <h1 class="font-serif font-bold text-3xl sm:text-4xl md:text-[2.7rem] text-inkDark leading-[1.16] tracking-tight mb-5">
+                        Website PPI Kabupaten Probolinggo
+                        <span class="italic font-semibold text-crimsonAccent block mt-1">Sedang Diperbarui</span>
+                    </h1>
+
+                    <!-- Penjelasan Singkat -->
+                    <p class="text-inkMuted text-sm sm:text-base leading-relaxed max-w-xl mb-8">
+                        Saat ini kami sedang melakukan pembaruan sistem agar website resmi PPI Kabupaten Probolinggo hadir dengan performa yang lebih cepat, tampilan yang lebih tertata, serta informasi keorganisasian dan kegiatan yang lebih mudah diakses.
+                    </p>
+                </div>
+
+                <!-- Tombol / Tautan Kontak Cepat (Instagram & Email) -->
+                <div class="pt-6 border-t border-inkDark/10">
+                    <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-inkMuted mb-3.5">
+                        Informasi &amp; Kontak Resmi
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-3">
+                        <!-- Tautan Instagram -->
+                        <a href="https://www.instagram.com/ppi_kabprobolinggo/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-crimsonDeep hover:bg-crimsonMid text-ivory text-sm font-medium transition-colors duration-200 border border-goldThin/30">
+                            <i class="fa-brands fa-instagram text-goldSoft"></i>
+                            <span>@ppi_kabprobolinggo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[11px] text-goldSoft/80 ml-0.5"></i>
+                        </a>
+
+                        <!-- Tautan Email -->
+                        <a href="mailto:ppikabprobolinggo@gmail.com"
+                           class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-ivoryCard hover:bg-white text-inkDark text-sm font-medium transition-colors duration-200 border border-inkDark/15">
+                            <i class="fa-regular fa-envelope text-crimsonAccent"></i>
+                            <span>ppikabprobolinggo@gmail.com</span>
+                        </a>
+
+                        <!-- Tombol Salin Email Halus -->
+                        <button type="button" onclick="salinEmail()"
+                                class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg text-inkMuted hover:text-inkDark hover:bg-inkDark/5 text-xs font-mono uppercase tracking-wider transition-colors duration-200 border border-transparent hover:border-inkDark/10"
+                                title="Salin alamat email">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>Salin</span>
+                        </button>
+                    </div>
+
+                    <!-- Pesan Konfirmasi Salin -->
+                    <p id="statusSalin" class="hidden mt-3 text-xs font-medium text-crimsonAccent">
+                        Alamat email berhasil disalin ke papan klip.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan (5/12): Panel Crimson Gelap & Indikator Progres Perbaikan -->
+            <div class="lg:col-span-5 crimson-panel text-ivory p-6 sm:p-10 md:p-11 flex flex-col justify-between relative border-t lg:border-t-0 lg:border-l border-goldThin/25">
+                <!-- Aksen Garis Emas Tipis di Sudut -->
+                <div class="hidden sm:block absolute top-5 right-5 w-10 h-10 border-t border-r border-goldThin/40 pointer-events-none"></div>
+
+                <div>
+                    <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-goldSoft/90 mb-2">
+                        Status Pemeliharaan
+                    </p>
+                    <h2 class="font-serif text-xl sm:text-2xl text-ivory mb-6">
+                        Peningkatan Sistem &amp; Konten
+                    </h2>
+
+                    <!-- Indikator Progres Perbaikan -->
+                    <div class="mb-7">
+                        <div class="flex items-center justify-between text-xs font-mono mb-2">
+                            <span class="text-ivory/80">Progres Pembaruan</span>
+                            <span class="text-goldSoft">Sedang Berjalan</span>
+                        </div>
+                        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+                            <div class="h-full w-3/4 bg-gradient-to-r from-goldThin via-goldSoft to-ivory rounded-full progress-glide"></div>
+                        </div>
+                    </div>
+
+                    <!-- Rincian Tahapan Singkat -->
+                    <ul class="space-y-3.5 text-sm text-ivory/85">
+                        <li class="flex items-start gap-3 pb-3 border-b border-white/10">
+                            <span class="font-mono text-xs text-goldSoft mt-0.5">01</span>
+                            <span>Optimalisasi kecepatan muat halaman &amp; akses seluler.</span>
+                        </li>
+                        <li class="flex items-start gap-3 pb-3 border-b border-white/10">
+                            <span class="font-mono text-xs text-goldSoft mt-0.5">02</span>
+                            <span>Pembaruan struktur arsip, profil, dan agenda kegiatan.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-mono text-xs text-goldSoft mt-0.5">03</span>
+                            <span>Penguatan keamanan serta keandalan layanan informasi.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Catatan Singkat di Bagian Bawah Panel -->
+                <div class="mt-8 pt-4 border-t border-goldThin/20 flex items-center justify-between text-xs text-ivory/70">
+                    <span>Terima kasih atas kesabaran Anda.</span>
+                    <span class="font-mono text-goldSoft">KAB. PROBOLINGGO</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Bersih -->
+    <footer class="w-full max-w-6xl mx-auto px-5 sm:px-8 pb-6 sm:pb-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-inkMuted">
+            <p>&copy; <span id="tahun"></span> Purna Paskibraka Indonesia Kabupaten Probolinggo.</p>
+            <p class="font-mono text-[11px] tracking-wider uppercase">Layanan Informasi Sedang Ditingkatkan</p>
+        </div>
+    </footer>
+
+    <!-- Input tersembunyi untuk menyalin email -->
+    <input type="text" id="inputEmail" value="ppikabprobolinggo@gmail.com" class="sr-only" aria-hidden="true">
+
+    <script>
+        document.getElementById('tahun').textContent = new Date().getFullYear();
+
+        function salinEmail() {
+            const input = document.getElementById('inputEmail');
+            const notif = document.getElementById('statusSalin');
+
+            try {
+                input.select();
+                input.setSelectionRange(0, 99999);
+                document.execCommand('copy');
+
+                notif.classList.remove('hidden');
+                clearTimeout(window.salinTimer);
+                window.salinTimer = setTimeout(() => {
+                    notif.classList.add('hidden');
+                }, 3000);
+            } catch (e) {
+                console.error('Gagal menyalin email:', e);
+            }
+        }
+    </script>
+</body>
+</html>
